@@ -7,7 +7,7 @@
             prueba para formación NestedComponents en Angular</p>
         <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
             <div class="grid w-full gap-6 md:grid-cols-2">
-                <app-list />
+                <app-list [heroes]="heroes" (selectedHero)="selectHero($event)" />
             </div>
         </div>
     </div>
