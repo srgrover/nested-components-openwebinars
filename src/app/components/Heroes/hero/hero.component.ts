@@ -1,3 +1,4 @@
+import { DetailsComponent } from './../details/details.component';
 import { ListComponent } from '../list/list.component';
 import { Component } from '@angular/core';
 
@@ -16,7 +17,7 @@ export interface Hero {
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [ListComponent],
+  imports: [ListComponent, DetailsComponent],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
 })
